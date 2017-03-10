@@ -52,7 +52,7 @@ a {
 }
 
 // desktop
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
 
   /* Base
   ------------------------------------------------------------*/
@@ -65,9 +65,18 @@ a {
 
 /* Header
 ------------------------------------------------------------*/
-.flexible-images {
-  max-width: 100%;
-  height: auto;
+.header-images {
+  background-image: url("../images/header.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 769px) {
+  .header-images {
+  height: 500px;
+  }
 }
 
 /* Contents
@@ -118,7 +127,7 @@ section {
 }
 
 // desktop
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   
  // Skills
   #skills {

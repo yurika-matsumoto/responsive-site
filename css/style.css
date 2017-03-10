@@ -43,17 +43,23 @@ a {
 .uppercase, section h2, #skills h3, #contact .button-contact {
   text-transform: uppercase; }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   /* Base
   ------------------------------------------------------------*/
   a:hover {
     text-decoration: underline; } }
 /* Header
 ------------------------------------------------------------*/
-.flexible-images {
-  max-width: 100%;
-  height: auto; }
+.header-images {
+  background-image: url("../images/header.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
 
+@media (min-width: 769px) {
+  .header-images {
+    height: 500px; } }
 /* Contents
 ------------------------------------------------------------*/
 section {
@@ -92,7 +98,7 @@ section {
     font-size: 2.4rem;
     font-weight: bold; }
 
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   #skills .container {
     -webkit-flex-direction: row;
     flex-direction: row;
